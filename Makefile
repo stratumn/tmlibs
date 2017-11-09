@@ -10,10 +10,7 @@ REPO:=github.com/tendermint/tmlibs
 all: test
 
 test:
-	@echo "--> Running linter"
-	@make metalinter_test
-	@echo "--> Running go test"
-	@go test $(PACKAGES)
+	go test -tags gcc `glide novendor`
 
 get_vendor_deps: ensure_tools
 	@rm -rf vendor/
@@ -24,24 +21,24 @@ ensure_tools:
 	go get $(GOTOOLS)
 	@gometalinter --install
 
-metalinter: 
+metalinter:
 	gometalinter --vendor --deadline=600s --enable-all --disable=lll ./...
 
-metalinter_test: 
+metalinter_test:
 	gometalinter --vendor --deadline=600s --disable-all  \
 		--enable=deadcode \
 		--enable=goconst \
 		--enable=gosimple \
-	 	--enable=ineffassign \
-	   	--enable=interfacer \
+		--enable=ineffassign \
+		--enable=interfacer \
 		--enable=megacheck \
-	 	--enable=misspell \
-	   	--enable=staticcheck \
+		--enable=misspell \
+		--enable=staticcheck \
 		--enable=safesql \
-	   	--enable=structcheck \
-	   	--enable=unconvert \
+		--enable=structcheck \
+		--enable=unconvert \
 		--enable=unused \
-	   	--enable=varcheck \
+		--enable=varcheck \
 		--enable=vetshadow \
 		--enable=vet \
 		./...
@@ -54,4 +51,4 @@ metalinter_test:
 		#--enable=goimports \
 		#--enable=golint \ <== comments on anything exported
 		#--enable=gotype \
-	   	#--enable=unparam \
+		#--enable=unparam \
