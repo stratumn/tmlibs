@@ -1,10 +1,10 @@
-hash: 1f3d3426e823e4a8e6d4473615fcc86c767bbea6da9114ea1e7e0a9f0ccfa129
-updated: 2017-12-05T23:47:13.202024407Z
+hash: 6efda1f3891a7211fc3dc1499c0079267868ced9739b781928af8e225420f867
+updated: 2017-12-17T12:50:35.983353926-08:00
 imports:
 - name: github.com/fsnotify/fsnotify
   version: 4da3e2cfbabc9f751898f250b49f2439785783a1
 - name: github.com/go-kit/kit
-  version: 53f10af5d5c7375d4655a3d6852457ed17ab5cc7
+  version: e3b2152e0063c5f05efea89ecbe297852af2a92d
   subpackages:
   - log
   - log/level
@@ -43,13 +43,13 @@ imports:
 - name: github.com/mattn/go-colorable
   version: 6fcc0c1fd9b620311d821b106a400b35dc95c497
 - name: github.com/mattn/go-isatty
-  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+  version: a5cdd64afdee435007ee3e9f6ed4684af949d568
 - name: github.com/mitchellh/mapstructure
   version: 06020f85339e21b2478f756a78e295255ffa4d6a
 - name: github.com/pelletier/go-toml
   version: 4e9e0ee19b60b13eb79915933f44d8ed5f268bdd
 - name: github.com/pkg/errors
-  version: f15c970de5b76fac0b59abb32d62c17cc7bed265
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/spf13/afero
   version: 8d919cbe7e2627e417f3e45c3c0e489a5b7e2536
   subpackages:
@@ -57,13 +57,13 @@ imports:
 - name: github.com/spf13/cast
   version: acbeb36b902d72a7a4c18e8f3241075e7ab763e4
 - name: github.com/spf13/cobra
-  version: de2d9c4eca8f3c1de17d48b096b6504e0296f003
+  version: 7b2c5ac9fc04fc5efafb60700713d4fa609b777b
 - name: github.com/spf13/jwalterweatherman
   version: 12bd96e66386c1960ab0f74ced1362f66f552f7b
 - name: github.com/spf13/pflag
   version: 4c012f6dcd9546820e378d0bdda4d8fc772cdfea
 - name: github.com/spf13/viper
-  version: 4dddf7c62e16bce5807744018f5b753bfe21bbd2
+  version: 25b30aa063fc18e48662b86996252eabdcf2f0c7
 - name: github.com/syndtr/goleveldb
   version: adf24ef3f94bd13ec4163060b21a5678f22b429b
   subpackages:
@@ -80,7 +80,7 @@ imports:
   - leveldb/table
   - leveldb/util
 - name: github.com/tendermint/go-wire
-  version: 2baffcb6b690057568bc90ef1d457efb150b979a
+  version: b6fc872b42d41158a60307db4da051dd6f179415
   subpackages:
   - data
   - data/base58
@@ -97,7 +97,7 @@ imports:
   subpackages:
   - unix
 - name: golang.org/x/text
-  version: 57961680700a5336d15015c8c50686ca5ba362a4
+  version: 75cc3cad82b5f47d3fb229ddda8c5167da14f294
   subpackages:
   - transform
   - unicode/norm
