@@ -55,7 +55,7 @@ func TestUniqueRng(t *testing.T) {
 
 func testThemAll(out io.Writer) {
 	// Reset the internal PRNG
-	reset()
+	grand.reset(1)
 
 	// Set math/rand's Seed so that any direct invocations
 	// of math/rand will reveal themselves.
